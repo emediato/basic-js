@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello</title>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+
+        document.querySelector('form').onsubmit = function() {
+          const name = document.querySelector('#name').value;
+          alert (`Hello, ${name}`);
+        };
+
+      });
+
+      /*   function hello() {
+      //    alert('Hello, world!');
+      const heading = document.querySelector('h1');
+
+
+        if (document.querySelector('h1').innerHTML === 'Hello' ){
+          document.querySelector('h1').innerHTML = 'Goodbye' ; //hability to html page and extract information
+        } else {
+          document.querySelector('h1').innerHTML = 'Hello' ;
+
+       <!--  -->
+
+        if (heading.innerHTML === 'Hello' ){
+          heading.innerHTML = 'Goodbye' ;
+        } else {
+          heading.innerHTML = 'Hello' ;
+        }
+        }
+      }*/
+
+
+    </script>
+
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <form>
+      <input autofocus id="name" placeholder="Name" type="text">
+      <input type="submit">
+    </form>
+  </body>
+</html>
